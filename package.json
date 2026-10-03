@@ -1,0 +1,24 @@
+{
+  "name": "@local/dsh-maid",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Maid mode: roleplay the Agent as a customizable maid character with switchable, importable and prompt-generated character cards.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": ["index.js", "client.js", "locale/*.json", "icon.svg"],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  }
+}
