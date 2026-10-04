@@ -14,14 +14,20 @@
 
 ## 安装
 
-1. 把本目录（`dsh-maid`）放到一个固定位置（插件通过 `link:` 链接安装，改源码即时生效）。
-2. 在 DSH 里让 Agent 执行安装，命令如下：
+**方式一：命令行一键安装（推荐，需已发布到 npm）**
+
+```bash
+dsh plugin --profile web add dsh-maid
+```
+
+**方式二：本地目录安装（开发 / 未发布 npm 时）**
+
+把本目录（`dsh-maid`）放到一个固定位置，在 DSH 里让 Agent 执行：
 
 ```
 plugin_manager install_bundle <dsh-maid 目录的绝对路径>
 ```
 
-> 也可以在 DSH 的「设置 → 插件」里按目录安装。
 > 安装后若修改了 `index.js`（Host 代码）需重启 DSH；修改 `client.js`（设置页）刷新页面即可。
 
 ## 使用方法

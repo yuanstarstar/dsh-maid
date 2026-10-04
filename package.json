@@ -1,7 +1,6 @@
 {
-  "name": "@local/dsh-maid",
+  "name": "dsh-maid",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "description": "Maid mode: roleplay the Agent as a customizable maid character with switchable, importable and prompt-generated character cards.",
   "exports": {

@@ -1,5 +1,5 @@
 window.__ModuleLoader__.load({
-  id: '@local/dsh-maid',
+  id: 'dsh-maid',
   factory(require) {
     const React = require('react');
     const h = React.createElement;

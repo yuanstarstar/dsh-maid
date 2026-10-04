@@ -1,4 +1,4 @@
 - insert:
     - id: maid
-      name: '@local/dsh-maid'
+      name: 'dsh-maid'
       config: {}
